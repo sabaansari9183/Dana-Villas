@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background:#edeeed;
+}
+
+.heading{
+    position: relative;
+    justify-content: center;
+    align-items:normal;
+    display: flex;
+    margin-top: 50px;
+}
+
+.image{
+    height:auto;
+    width: auto;
+    position: absolute;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 1000px;
+    margin-left: 100px;
+    display: flex;
+    
+
+}
+
+.container{
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    
+}
+
+
+.container .drop{
+
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgb(33, 255, 255);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
+                    15px 25px 10px rgba(0,0,0,0.1),
+                    15px 20px 20px rgba(0,0,0,0.05),
+                    inset -10px -10px 15px rgba(225,225,225,0.9);
+    justify-content: center;
+    align-items:center;
+    display: flex;
+}
+
+.drop::before{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 55% 45% 55% 45% / 58% 54% 46% 42%  ;
+}
+
+
+.drop::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 65px;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 35% 65% 55% 45% / 58% 30% 70% 42%   ;
+
+}
+
+.drop:nth-child(2){
+    transform: scale(0.5) translate(-450px,350px);
+    border-radius: 28% 72% 38% 62% / 47% 42% 58% 53%  ;
+}
+
+.drop:nth-child(3){
+    transform: scale(0.45) translate(500px,50px);
+    border-radius: 21% 79% 24% 76% / 70% 30% 70% 30%   ;
+}
+
+.drop:nth-child(4){
+    transform: scale(0.35) translate(420px,-610px);
+    border-radius: 45% 55% 47% 53% / 49% 43% 57% 51%   ;
+}
+
+.container .drop a{
+    position: relative;
+    background: black;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+
+.gallery{
+    position: absolute;
+    margin-top: 100px;
+   
+}
+
+.gallery img{
+    height: auto;
+    padding: 25px 25px;
+    margin:100px;
+    filter:grayscale(100%);
+    transition: 1s;
+}
+
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+.container .drop2{
+
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background: rgb(197, 243, 145);
+    border-radius: 64% 36% 54% 46% / 33% 49% 51% 67%  ;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
+                    15px 25px 10px rgba(0,0,0,0.1),
+                    15px 20px 20px rgba(0,0,0,0.05),
+                    inset -10px -10px 15px rgba(225,225,225,0.9);
+    justify-content: center;
+    align-items:center;
+    display: flex;
+}
+
+.container .drop2:hover{
+    border-radius:49% 51% 48% 52% / 47% 43% 57% 53% ;
+    transition: 0.5s;
+}
+
+.container .drop2::before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    opacity:0.9;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.container .drop2 .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+
+}
+
+.container .drop2 .content h2{
+    position: relative;
+    color: black;
+    font-size: 1.5em;
+}
+
+.container .drop2 .content form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .drop2 .content form .inputbox{
+    position: relative;
+    width: 300px;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
+                inset -2px -5px 10px rgba(225,225,225,1),
+                    15px 15px 10px rgba(0,0,0,0.05),
+                    15px 10px 15px rgba(0,0,0,0.025);
+                    
+    border-radius: 10px;                
+}
+.container .drop2 .content form .inputbox::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    height: 8px;
+     ;
+    border-radius: 5px;
+    
+
+}
+
+.container .drop2 .content form .inputbox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width:100%;
+    font-size: 1em;
+    padding: 10px 15px;
+
+}
+.container .drop2 .content form .inputbox input[type="submit"]{
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    background-color: black;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.location{
+
+    position: absolute;
+    align-items:normal;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 70px;
+}
+
+
+
